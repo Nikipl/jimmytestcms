@@ -1,0 +1,24 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      Blogs_ConnectionString: "Server=db;Database=BlogsDb;User Id=sa;Password=K1ndaStr0ngP_ssword;"
+    depends_on:
+      - db
+  db:
+    expose:
+      - "1433"
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "K1ndaStr0ngP_ssword"
+    ports:
+    - "1401:1433"
+    volumes:
+    - sqldata:/var/opt/mssql
+volumes:
+  sqldata:
