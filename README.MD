@@ -31,7 +31,7 @@ run `docker exec jimmytestcms_app_1 /app/updater/JimmyTestCMS.DbUpdater`
 
 #### returns
 
-```json
+```
 [
   {
     "id": number,
@@ -49,7 +49,7 @@ run `docker exec jimmytestcms_app_1 /app/updater/JimmyTestCMS.DbUpdater`
 
 #### returns
 
-```json
+```
 {
   "id": number,
   "title": string,
@@ -65,7 +65,7 @@ run `docker exec jimmytestcms_app_1 /app/updater/JimmyTestCMS.DbUpdater`
 
 #### payload
 
-```json
+```
 {
   "title": string,
   "body": string
@@ -78,9 +78,9 @@ run `docker exec jimmytestcms_app_1 /app/updater/JimmyTestCMS.DbUpdater`
 
 #### payload
 
-```json
+```
 {
-  "id": number
+  "id": number,
   "title": string,
   "body": string
 }
