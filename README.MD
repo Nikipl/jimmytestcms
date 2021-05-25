@@ -97,3 +97,4 @@ run `docker exec jimmytestcms_app_1 /app/updater/JimmyTestCMS.DbUpdater`
 ## Things to improve
  - Request validation
  - Descriptive error messages
+ - Authentication
